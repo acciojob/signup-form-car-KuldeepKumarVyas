@@ -18,11 +18,22 @@
 			<input type = "text" id = "name" name = "name" required placeholder="Name"><br><br>
 		<label for = "email">Email</label><br>
 			<input type = "email" id = "email" email = "email" required placeholder="Email"><br><br>
-		<label for = "gender">Gender</label>
-			<input type ="radio" id = "gender_m" gender = "gender_m" required>
-			<input type ="radio" id = "gender_f" gender = "gender_f" required><br><br>
+	<fieldset>
+		<legend>Gender</legend>
+		<label for ="male">Male</label>
+			<input type ="radio"  id = "gender_m" name = "gender" value = "male"  >
+		<label for = "female">Female</label>
+			<input type ="radio"  id = "gender_f" name = "gender" value = "female" >
+		<br><br>
+	</fieldset>		
+		
 		<label for = "cars">Car Brands</label><br>
-			<input type = "select" id ="cars" cars ="cars" required placeholder="--Please choose an option--"><br><br>
+			<select id = "cars" name ="cars">
+				<option value ="BMW">BMW</option>
+				<option value ="Thar">Thar</option>
+				<option value = "SUV">SUV</option>
+			</select><br><br>
+			
 		<label for = "age">Age</label><br>
 			<input type="number" id = "age" age="age" required placeholder="Age"><br><br>
 		<label for = "dob">DOB</label><br>
@@ -31,8 +42,11 @@
 			<input type = "tel" id = "tel" tel = "tel" placeholder="xxx-xxx-xxxx"><br><br>
 		<label for = "password">Password</label><br>
 			<input type ="password" id="password" password = "password" required placeholder="Password"><br><br>
+	<fieldset>
 		<label for = "tos">I agree to the TOS</label>
-			<input type = "checkbox" id="tos" tos="tos" required><br><br>
+			<input type = "checkbox" id="tos" tos="tos" required>
+	</fieldset>		<br><br>
+		
 		<input type = "submit" value="Submit">
 			
 		</form>
